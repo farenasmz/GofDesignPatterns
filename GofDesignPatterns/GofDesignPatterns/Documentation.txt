@@ -1,0 +1,15 @@
+﻿¿Que son los patrones de diseño?
+Por lo tanto, podemos decir que un patrón de diseño es la solución a un problema de diseño, 
+el cual debe haber comprobado su efectividad resolviendo problemas similares en el pasado,
+también tiene que ser reutilizable, por lo que se deben poder usar para resolver problemas 
+parecidos en contextos diferentes.
+En este libro utilizaremos esta definición para los patrones de diseño de software.
+
+- Patrones Creacionales: Son patrones de diseño relacionados con la creación o construcción de objetos. 
+Estos patrones intentan controlar la forma en que los objetos son creados implementando mecanismos que 
+eviten la creación directa de objetos.
+- Patrones Estructurales: Son patrones que tiene que ver con la forma en que las clases se relacionan con otras clases. 
+Estos patrones ayudan a dar un mayor orden a nuestras clases ayudando a crear componentes más flexibles y extensibles.
+- Patrones de Comportamiento: Son patrones que están relacionados 
+con procedimientos y con la asignación de responsabilidad a los objetos. 
+Los patrones de comportamiento engloban también patrones de comunicación entre ellos
