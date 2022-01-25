@@ -1,0 +1,13 @@
+﻿Prototype 95:
+El patrón Prototype basa su funcionalidad en la clonación de objetos, 
+estos nuevos objetos son creados mediante un pool de prototipos elaborados
+previamente y almacenados.
+Este patrón es especialmente útil cuando necesitamos crear objetos
+basados en otros ya existentes o cuando se necesita la creación de estructuras
+de objetos muy grandes, este patrón nos ayuda también a ocultar la estrategia
+utilizada para clonar un objeto.
+
+Cuándo utilizarlo:
+ Cuando se necesitan crear nuevos objetos basados en objetos existentes.
+ Cuando la creación directa de un objeto por medio del operador new puede ser perjudicial.
+ Cuando se tiene gran cantidad de objetos con atributos repetidos, siempre es mucho más rápido clonar que crear nuevos objetos y setear cada valor.

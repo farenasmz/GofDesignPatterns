@@ -1,0 +1,12 @@
+﻿BUILDER PAG 80:
+
+Builder es un patrón de diseño creacional que nos permite 
+construir objetos complejos paso a paso. 
+El patrón nos permite producir distintos tipos y representaciones de un objeto 
+empleando el mismo código de construcción.
+
+Utilizarlo cuando:
+ Cuando necesitamos un mecanismo simple para crear objetos complejos.
+ Cuando necesitamos crear repetidamente objetos complejos.
+ Cuando necesitamos ocultar a los usuarios la complejidad de la creación 
+de un objeto determinado.

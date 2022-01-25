@@ -5,9 +5,13 @@ VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GofDesignPatterns", "GofDesignPatterns\GofDesignPatterns.csproj", "{ED7F7217-34D0-4A4A-9E31-860FFC63520D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{5327D001-807D-40F3-AEB9-D2E8304BB071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{5327D001-807D-40F3-AEB9-D2E8304BB071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{7963F957-1A20-4796-843F-4413931D2C9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{7963F957-1A20-4796-843F-4413931D2C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{AE167FF3-608D-4217-A4A0-65F62943E886}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prototype.csproj", "{DC47ACBB-7FFB-4A1A-82F6-A89EC44FFC39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{7963F957-1A20-4796-843F-4413931D2C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7963F957-1A20-4796-843F-4413931D2C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7963F957-1A20-4796-843F-4413931D2C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE167FF3-608D-4217-A4A0-65F62943E886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE167FF3-608D-4217-A4A0-65F62943E886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE167FF3-608D-4217-A4A0-65F62943E886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE167FF3-608D-4217-A4A0-65F62943E886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC47ACBB-7FFB-4A1A-82F6-A89EC44FFC39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC47ACBB-7FFB-4A1A-82F6-A89EC44FFC39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC47ACBB-7FFB-4A1A-82F6-A89EC44FFC39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC47ACBB-7FFB-4A1A-82F6-A89EC44FFC39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
