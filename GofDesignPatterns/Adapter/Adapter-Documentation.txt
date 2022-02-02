@@ -1,0 +1,21 @@
+﻿Página 143:
+El patrón de diseño Adapter es utilizado cuando tenemos interfaces de software incompatibles, 
+las cuales a pesar de su incompatibilidad tiene una funcionalidad similar. 
+Este patrón es implementado cuando se desea homogeneizar la forma de trabajar 
+con estas interfaces incompatibles, para lo cual se crea una clase intermedia que funciona como un adaptador. 
+Esta clase adaptador proporcionará los métodos para interactuar con la interface incompatible.
+
+Cuándo utilizarlo:
+ Cuando buscamos homogeneizar la forma de trabajar con interfaces incompatibles mediante una interface en común.
+ Cuando las interfaces del sistema viejo no se ajustan al nuevo sistema.
+
+Caso:
+Para este ejemplo imaginaremos que tenemos un sistema encargado de realizar préstamos personales por medio de bancos.
+Nuestro sistema lo que hará es utilizar las API’s proporcionadas por los bancos para 
+comunicarnos con ellos, esto con el fin de validar si el banco le puede prestar la cantidad solicitada, 
+el sistema se tendrá que ir a los dos bancos para validar esta información y decirle al cliente 
+si es posible prestarle el efectivo.
+Sin embargo, no todo es tan simple ya que cada banco brinda sus propias API´s para comunicarse con ellos. 
+El primer banco XBank proporciona una interface síncrona y el segundo banco YBank proporciona una interface asíncrona. 
+Cada API en esencia requiere la misma información para hacer la 
+solicitud, sin embargo, el nombre de las clases, variables y tipos de datos son distintos entre cada API´s.
