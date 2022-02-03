@@ -1,0 +1,24 @@
+﻿Patron Bridge Pag 160:
+Bridge es un patrón de diseño estructural que te permite dividir una clase grande, o un grupo de clases 
+estrechamente relacionadas, en dos jerarquías separadas (abstracción e implementación) 
+que pueden desarrollarse independientemente la una de la otra.
+
+Cuándo utilizarlo:
+ Cuando existen clases fuertemente relacionadas entre sí, pero que alguna de las dos es propensa a cambiar 
+con el tiempo.
+
+Escenario:
+Nos han pedido que realicemos un programa que se comunique con otra aplicación. 
+Los requerimientos hacen mucho énfasis en la confidencialidad de la información 
+que viaja, por lo que nos han pedido que encriptemos la información antes de enviarla, sin embargo, los usuarios 
+de la aplicación destino no han definido exactamente cuál será el método de encriptamiento 
+con el que se le deben de enviar los mensajes, es por eso que 
+nos han pedido que creemos un componente que sea versátil en este 
+sentido y que además, si cambia el método de encriptamiento no afecte al componente ya desarrollado.
+
+Conclusión:
+Si nos damos cuenta, en este ejemplo todas las implementaciones heredan de una clase en común 
+la cual es IEncryptAlgorithm lo que nos facilita mucho el trabajo, pero 
+¿qué pasaría si las implementaciones tuvieran interfaces incompatibles?, 
+esto nos llevaría a crear un Adapter entre la implementación y la abstracción con 
+el fin de lograr que las interfaces fueran compatibles para la Abstracción.

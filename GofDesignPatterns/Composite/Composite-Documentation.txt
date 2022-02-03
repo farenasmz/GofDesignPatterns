@@ -1,0 +1,16 @@
+﻿Composite pag 176:
+Composite es un patrón de diseño estructural que te permite componer objetos 
+en estructuras de árbol y trabajar con esas estructuras como si fueran objetos individuales.
+
+Este patrón es muy útil cuando requerimos manipular un conjunto de elementos 
+muy parecidos entre si de una forma uniforme, por lo cual estas clases deben pertenecer 
+a la misma familia y tener un ancestro en común, el cual define el comportamiento mínimo 
+que deben de tener para poder ser tratadas uniformemente y poder construir 
+estructuras jerárquicas compuestas por objetos más simples. 
+Los objetos simples y compuestos son conocidos como Leaf y Composite respectivamente y el ancestro 
+en común es llamado Componente. Estas estructuras son construidas en forma de árbol en donde la 
+recursividad juega un papel muy importante para sacar el máximo provecho a toda la estructura.
+
+Cuándo utilizarlo:
+ Cuando detectamos estructuras complejas que podrían dividirse en elementos más pequeños, los cuales 
+están muy relacionados entre sí, tanto en funcionamiento como en estructura.
