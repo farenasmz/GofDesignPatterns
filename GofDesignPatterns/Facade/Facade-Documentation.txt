@@ -1,0 +1,67 @@
+﻿Patrón Facade Pag 218;
+
+El patrón Facade (fachada) tiene la característica de ocultar la complejidad de interactuar 
+con un conjunto de subsistemas proporcionando una interface de alto nivel, la cual 
+se encarga de realizar la comunicación con todos los subsistemas necesarios. 
+La fachada es una buena estrategia cuando requerimos interactuar con varios 
+subsistemas para realizar una operación concreta ya que se necesita tener 
+el conocimiento técnico y funcional para saber qué operaciones de cada subsistema 
+tenemos que ejecutar y en qué orden, lo que puede resultar muy complicado 
+cuando los sistemas empiezan a crecer demasiado.
+
+Tener una fachada resulta útil cuando tienes que integrar tu aplicación con una biblioteca 
+sofisticada con decenas de funciones, de la cual sólo necesitas una pequeña parte.
+
+Por ejemplo, una aplicación que sube breves vídeos divertidos de gatos 
+a las redes sociales, podría potencialmente utilizar una biblioteca de 
+conversión de vídeo profesional. Sin embargo, lo único que necesita 
+en realidad es una clase con el método simple 
+codificar(nombreDelArchivo, formato). 
+Una vez que crees dicha clase y la conectes con la biblioteca de conversión de vídeo, tendrás tu primera fachada.
+
+-- Relaciones con otros patrones
+
+Facade define una nueva interfaz para objetos existentes, mientras 
+que Adapter intenta hacer que la interfaz existente sea utilizable. 
+Normalmente Adapter sólo envuelve un objeto, mientras que Facade trabaja con todo un subsistema de objetos.
+
+Abstract Factory puede servir como alternativa a Facade cuando tan solo deseas esconder 
+la forma en que se crean los objetos del subsistema a partir del código cliente.
+
+Flyweight muestra cómo crear muchos pequeños objetos, mientras que Facade 
+muestra cómo crear un único objeto que represente un subsistema completo.
+
+Facade y Mediator tienen trabajos similares: ambos intentan organizar la colaboración 
+entre muchas clases estrechamente acopladas.
+
+Facade define una interfaz simplificada a un subsistema de objetos, pero no 
+introduce ninguna nueva funcionalidad. 
+El propio subsistema no conoce la fachada. 
+Los objetos del subsistema pueden comunicarse directamente.
+Mediator centraliza la comunicación entre componentes del sistema. 
+Los componentes conocen únicamente el objeto mediador y no se comunican directamente.
+Una clase fachada a menudo puede transformarse en una Singleton, ya que 
+un único objeto fachada es suficiente en la mayoría de los casos.
+
+Facade es similar a Proxy en el sentido de que ambos pueden almacenar temporalmente 
+una entidad compleja e inicializarla por su cuenta. 
+Al contrario que Facade, Proxy tiene la misma interfaz que su objeto de servicio, 
+lo que hace que sean intercambiables.
+
+-- Tener en cuenta:
+Como vemos en el diagrama, la fachada nos ahorra el esfuerzo de comunicarnos 
+directamente con los subsistemas, ahorrándonos tener que conocer 
+cómo funciona cada subsistema. Esto nos proporciona la venta de ejecutar 
+una sola operación la cual nos arroje el resultado de la interacción con varios subsistemas.
+
+
+Cuándo utilizarlo:
+ Cuando interactuar con un conjunto de subsistemas es complicado, debido a que es necesario 
+conocer los objetos necesarios para tener una interacción recíproca con cada sistema.
+ Cuando queremos construir interfaces de alto nivel para nuestros usuarios.
+
+MI OPINIÓN:
+Es especialmente util cuando tenemos un proceso muy largo y queremos q cada subsistema
+lo trabaje un programador o equipo diferente, al final unen todas las piezas (subsistemas) y
+la funcionalidad queda 
+
